@@ -826,8 +826,8 @@ footer {
 }
 
 .hero-photo-frame {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 2px solid rgba(0,212,170,0.3);
   overflow: hidden;
