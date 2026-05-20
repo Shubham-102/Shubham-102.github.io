@@ -816,6 +816,13 @@ footer {
   align-items: center;
 }
 
+.hero-top-row {
+  display: grid;
+  grid-template-columns: 1fr 180px;
+  gap: 2rem;
+  align-items: center;
+}
+
 .hero-text-col { display: flex; flex-direction: column; }
 
 .hero-photo-col {
