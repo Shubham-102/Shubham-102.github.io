@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -31,38 +31,40 @@
 <!-- ── HERO ────────────────────────────────────────── -->
 <section id="hero">
   <div class="hero-inner">
-    <div class="hero-badge">
-      <span class="hero-badge-dot"></span>
-      Available for full-time roles · Hartford, CT
-    </div>
-    <h1 class="hero-name">
-      Shubham<br>Mahe<span class="accent">shwari</span>
-    </h1>
-    <div class="hero-typewriter">
-      <span id="typewriter-text"></span><span class="cursor"></span>
-    </div>
-    <p class="hero-desc">
-      I build AI-powered data products — from feature engineering and predictive modeling to LLM integration and deployed web applications. Currently completing M.Eng at UConn, seeking full-time Data Analyst and ML Engineer roles across the USA.
-    </p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn-primary">
-        <i class="fa-solid fa-rocket"></i> View Projects
-      </a>
-      <a href="Shubham_Resume_Final.pdf" download class="btn-ghost">
-        <i class="fa-solid fa-download"></i> Download Resume
-      </a>
-    </div>
+    <div class="hero-top-row">
+      <div class="hero-text-col">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Available for full-time roles · Hartford, CT · Open to Relocation
+        </div>
+        <h1 class="hero-name">
+          Shubham<br>Mahe<span class="accent">shwari</span>
+        </h1>
+        <div class="hero-typewriter">
+          <span id="typewriter-text"></span><span class="cursor"></span>
+        </div>
+        <p class="hero-desc">
+          I build AI-powered data products — from feature engineering and predictive modeling to LLM integration and deployed web applications. Currently completing M.Eng at UConn, seeking full-time Data Analyst and ML Engineer roles across the USA.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">
+            <i class="fa-solid fa-rocket"></i> View Projects
+          </a>
+          <a href="Shubham_Resume.pdf" download class="btn-ghost">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
     <div class="hero-stats">
       <div>
-        <div class="hero-stat-num">0.86<span>R²</span></div>
-        <div class="hero-stat-label">Best Model Score</div>
+        <div class="hero-stat-num">87<span>%</span></div>
+        <div class="hero-stat-label">Model Accuracy</div>
       </div>
       <div>
-        <div class="hero-stat-num">53<span>K+</span></div>
+        <div class="hero-stat-num">50<span>K+</span></div>
         <div class="hero-stat-label">Records Analyzed</div>
       </div>
       <div>
-        <div class="hero-stat-num">3<span>+</span></div>
+        <div class="hero-stat-num">4<span>+</span></div>
         <div class="hero-stat-label">Deployed Projects</div>
       </div>
       <div>
@@ -70,7 +72,13 @@
         <div class="hero-stat-label">Dev Experience</div>
       </div>
     </div>
-  </div>
+      </div><!-- end hero-text-col -->
+      <div class="hero-photo-col">
+        <div class="hero-photo-frame">
+          <img src="profile.jpg" alt="Shubham Maheshwari">
+        </div>
+      </div>
+    </div><!-- end hero-top-row -->
 </section>
 
 <!-- ── ABOUT ───────────────────────────────────────── -->
@@ -79,17 +87,18 @@
   <div class="about-grid">
     <div class="about-text fade-up">
       <p>I'm a data professional who loves the full stack of a data problem — from messy raw CSVs to a deployed AI product someone can actually use. My focus is on making machine learning <strong>explainable</strong> and <strong>useful</strong>, not just accurate.</p>
-      <p>Currently finishing my M.Eng in Computer Science at <strong>UConn</strong>, where I've worked on multi-modal deep learning, big data pipelines, and data visualization. Before that I spent a year building full-stack applications at <strong>Sourcved Technologies</strong> in India.</p>
-      <p>I'm particularly interested in how <strong>LLMs and traditional ML</strong> can work together — my insurance risk advisor project is a real example of that combination in production.</p>
+      <p>Finishing my M.Eng in Computer Science at <strong>UConn</strong>, where I've worked on multi-modal deep learning, big data pipelines, and data visualization. Before that I spent a year building full-stack applications at <strong>Sourcved Technologies</strong> in India.</p>
+      <p>I'm particularly interested in how <strong>LLMs and traditional ML</strong> can work together — my RAG chatbot and insurance risk advisor projects are real examples of that combination in production. <strong>Databricks Generative AI certified.</strong></p>
       <div class="about-chips">
         <span class="chip">Python</span>
         <span class="chip">XGBoost</span>
         <span class="chip">SHAP</span>
-        <span class="chip">LLM Integration</span>
+        <span class="chip">RAG / LangChain</span>
         <span class="chip">SQL</span>
-        <span class="chip">Power BI</span>
+        <span class="chip">Docker</span>
         <span class="chip">Streamlit</span>
         <span class="chip">PyTorch</span>
+        <span class="chip">Databricks</span>
       </div>
     </div>
     <div class="about-card fade-up">
@@ -108,7 +117,7 @@
       <div class="edu-divider"></div>
       <div class="about-card-title" style="margin-top:0.5rem;">Coursework</div>
       <div style="color:var(--muted); font-size:0.82rem; line-height:1.8;">
-        ML for Data Science · Big Data Analytics · Data Mining · Data Visualization · Network Security · Advanced Programming
+        ML for Data Science · Deep Learning · Data Mining · Cloud Computing · Data Visualization · Advanced Programming
       </div>
     </div>
   </div>
@@ -130,7 +139,8 @@
           <span class="skill-tag">TensorFlow</span>
           <span class="skill-tag">SHAP</span>
           <span class="skill-tag">Grad-CAM</span>
-          <span class="skill-tag">LLM Integration</span>
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">RAG</span>
           <span class="skill-tag">Prompt Engineering</span>
         </div>
       </div>
@@ -195,13 +205,12 @@
         <div class="project-number">01</div>
         <div class="project-title">AI-Powered Insurance Risk Advisor</div>
         <p class="project-desc">
-          End-to-end ML system that predicts insurance premiums, explains risk drivers using SHAP, and generates plain-English recommendations via Llama 3.3-70b. Built on 53,500+ policy records with 9 engineered features. Deployed live on Streamlit Cloud.
+          End-to-end ML system that predicts insurance risk, explains drivers using SHAP, and generates plain-English recommendations. Trained on 50K+ records, achieving 87% validation accuracy vs. a 72% logistic-regression baseline. Deployed live on Streamlit Cloud.
         </p>
         <div class="project-metrics">
-          <span class="metric">R² = 0.86</span>
-          <span class="metric">MAE = $1,932</span>
-          <span class="metric">53,500+ records</span>
-          <span class="metric">3.9× risk multiplier found</span>
+          <span class="metric">87% Accuracy</span>
+          <span class="metric">vs 72% baseline</span>
+          <span class="metric">50K+ records</span>
         </div>
         <div class="project-tech">
           <span class="tech-tag">Python</span>
@@ -228,10 +237,11 @@
       <div class="project-number">02</div>
       <div class="project-title">Explainable Multi-Modal Deep Learning</div>
       <p class="project-desc">
-        Capstone research project building single-modal and multi-modal deep learning models combining sensor and image data. Applied SHAP and Grad-CAM to interpret model decisions and quantify cross-modal feature contributions.
+        UConn Capstone. Built single- and multi-modal deep learning architectures fusing sensor and image data. Multi-modal fusion beat single-modality by 14%. Stress-tested under 10–30% input noise, retaining 18% higher accuracy. SHAP + Grad-CAM heatmaps surfaced which sensor channels drove each prediction.
       </p>
       <div class="project-metrics">
-        <span class="metric">+18% stability</span>
+        <span class="metric">+14% over baseline</span>
+        <span class="metric">+18% noise resilience</span>
         <span class="metric">SHAP + Grad-CAM</span>
       </div>
       <div class="project-tech">
@@ -251,12 +261,39 @@
     <!-- Project 3 -->
     <div class="project-card fade-up">
       <div class="project-number">03</div>
-      <div class="project-title">Customer & Service Analytics Platform</div>
+      <div class="project-title">RAG Chatbot — AI Document Q&amp;A</div>
       <p class="project-desc">
-        Full-stack platform connecting customers with service providers. Modelled transactional data in MongoDB for invoice and payment tracking. Analysed usage patterns to surface high-demand service categories for product decisions.
+        End-to-end Retrieval-Augmented Generation chatbot that answers questions grounded in user-uploaded PDFs with source page citations. Chunked, embedded, and stored docs in ChromaDB. Integrated Groq (Llama 3.1 8B) with a custom prompt template preventing hallucination with multi-turn memory. Deployed on Hugging Face Spaces.
       </p>
       <div class="project-metrics">
-        <span class="metric">MongoDB data model</span>
+        <span class="metric">Source citations</span>
+        <span class="metric">Anti-hallucination</span>
+        <span class="metric">Live on HF Spaces</span>
+      </div>
+      <div class="project-tech">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">LangChain</span>
+        <span class="tech-tag">ChromaDB</span>
+        <span class="tech-tag">Groq / Llama 3.1</span>
+        <span class="tech-tag">HuggingFace</span>
+        <span class="tech-tag">Streamlit</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Shubham-102" target="_blank" class="project-link">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="project-card fade-up">
+      <div class="project-number">04</div>
+      <div class="project-title">Customer &amp; Service Analytics Platform</div>
+      <p class="project-desc">
+        Full-stack MERN marketplace connecting customers with service providers. Queried aggregated usage logs to surface top-3 demand categories, directly informing the next sprint's product roadmap. MongoDB schemas with embedded vs. referenced document strategies optimized query performance.
+      </p>
+      <div class="project-metrics">
+        <span class="metric">Top-3 demand insights</span>
         <span class="metric">E2E test suite</span>
       </div>
       <div class="project-tech">
@@ -283,18 +320,6 @@
     <h2 class="section-title">Where I've Worked</h2>
     <div class="timeline">
 
-      <div class="timeline-item current fade-up">
-        <div class="timeline-header">
-          <div class="timeline-role">Student Manager</div>
-          <span class="timeline-date">Aug 2024 – Present</span>
-        </div>
-        <div class="timeline-company">UConn Dining Services <span>· Storrs, CT</span></div>
-        <ul class="timeline-bullets">
-          <li>Managed scheduling, payroll, and shift assignments for <strong>40+ student employees</strong> using data tracking systems.</li>
-          <li>Oversaw hiring and onboarding workflows; tracked staff performance and training completion metrics across 3 locations.</li>
-        </ul>
-      </div>
-
       <div class="timeline-item fade-up">
         <div class="timeline-header">
           <div class="timeline-role">Software Developer Intern — Front-End & Integration</div>
@@ -302,9 +327,8 @@
         </div>
         <div class="timeline-company">Sourcved Technologies <span>· Ahmedabad, India</span></div>
         <ul class="timeline-bullets">
-          <li>Developed and maintained responsive web applications; <strong>reduced cross-browser defects</strong> through systematic debugging across Chrome, Firefox, and Edge.</li>
-          <li>Collaborated with UX/UI teams measuring usability improvements; implemented design changes reducing support tickets.</li>
-          <li>Conducted structured cross-browser functional testing, documenting results and tracking resolution rates.</li>
+          <li>Built REST API-integrated web applications; traced data flow from backend to UI state, catching <strong>3 classes of serialization bugs</strong> causing silent data loss.</li>
+          <li><strong>Reduced UI defect rate by 40%</strong> over two release cycles by introducing a pre-merge browser matrix checklist across Chrome, Firefox, and Edge.</li>
         </ul>
       </div>
 
@@ -315,8 +339,20 @@
         </div>
         <div class="timeline-company">Arth Infosoft Pvt. Ltd. <span>· Ahmedabad, India</span></div>
         <ul class="timeline-bullets">
-          <li>Built full-stack applications using MongoDB, Express.js, React.js, and Node.js; designed <strong>scalable database schemas</strong> for dynamic data retrieval.</li>
+          <li>Designed MongoDB schemas with <strong>embedded vs. referenced document strategies</strong> to optimize query performance; implemented REST API endpoints consumed by the React front end.</li>
           <li>Managed server-side data logic and REST API integrations; built foundational experience in backend data pipelines.</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item current fade-up">
+        <div class="timeline-header">
+          <div class="timeline-role">Student Manager — Operations & Data Tracking</div>
+          <span class="timeline-date">Aug 2024 – Present</span>
+        </div>
+        <div class="timeline-company">UConn Dining Services <span>· Storrs, CT</span></div>
+        <ul class="timeline-bullets">
+          <li>Managed scheduling, payroll, and shift assignments for <strong>40+ student employees</strong> using data tracking systems.</li>
+          <li>Oversaw hiring and onboarding workflows; tracked staff performance and training completion metrics across 3 locations.</li>
         </ul>
       </div>
 
@@ -324,59 +360,83 @@
   </div>
 </section>
 
-<!-- ── CONTACT ─────────────────────────────────────── -->
-<section id="contact">
-  <div class="contact-wrapper">
-    <div class="contact-left fade-up">
-      <div class="section-label">05 — Contact</div>
-      <h2>Let's<br><em>Work Together</em></h2>
-      <p>I'm actively looking for Data Analyst and ML Engineer roles across the US. If you have an opportunity, a project, or just want to talk data — reach out.</p>
-      <div class="contact-links">
-        <a href="mailto:rathishubham3410@gmail.com" class="contact-link">
-          <div class="contact-link-icon cl-teal"><i class="fa-solid fa-envelope"></i></div>
-          <div class="contact-link-text">
-            <strong>Email</strong>
-            <span>rathishubham3410@gmail.com</span>
-          </div>
-        </a>
-        <a href="https://linkedin.com/in/maheshwari-shubham" target="_blank" class="contact-link">
-          <div class="contact-link-icon cl-blue"><i class="fa-brands fa-linkedin-in"></i></div>
-          <div class="contact-link-text">
-            <strong>LinkedIn</strong>
-            <span>linkedin.com/in/maheshwari-shubham</span>
-          </div>
-        </a>
-        <a href="https://github.com/Shubham-102" target="_blank" class="contact-link">
-          <div class="contact-link-icon cl-white"><i class="fa-brands fa-github"></i></div>
-          <div class="contact-link-text">
-            <strong>GitHub</strong>
-            <span>github.com/Shubham-102</span>
-          </div>
-        </a>
+<!-- ── CERTIFICATIONS ───────────────────────────────── -->
+<section id="certifications">
+  <div class="inner">
+    <div class="section-label">05 — Certifications</div>
+    <h2 class="section-title">Credentials</h2>
+    <div class="certs-grid">
+      <div class="cert-card fade-up">
+        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+        <div class="cert-body">
+          <div class="cert-name">Generative AI Fundamentals</div>
+          <div class="cert-issuer">Databricks · 2024</div>
+        </div>
+      </div>
+      <div class="cert-card fade-up">
+        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+        <div class="cert-body">
+          <div class="cert-name">Databricks Fundamentals Accreditation</div>
+          <div class="cert-issuer">Databricks · Feb 2026</div>
+        </div>
       </div>
     </div>
-    <div class="contact-right fade-up">
-      <form class="contact-form" onsubmit="handleSubmit(event)">
-        <label class="contact-form-label">Your Name</label>
-        <input type="text" placeholder="Jane Smith" required>
-        <label class="contact-form-label">Email Address</label>
-        <input type="email" placeholder="jane@company.com" required>
-        <label class="contact-form-label">Message</label>
-        <textarea placeholder="Hi Shubham, I'd like to discuss..." required></textarea>
-        <button type="submit">Send Message <i class="fa-solid fa-paper-plane" style="margin-left:0.5rem;"></i></button>
-      </form>
+  </div>
+</section>
+
+<!-- ── CONTACT ─────────────────────────────────────── -->
+<section id="contact">
+  <div class="contact-wrapper contact-wrapper-slim">
+    <div class="contact-left fade-up">
+      <div class="section-label">06 — Contact</div>
+      <h2>Let's<br><em>Work Together</em></h2>
+      <p>I'm actively looking for Data Analyst and ML Engineer roles across the US. If you have an opportunity, a project, or just want to talk data — reach out directly through any of the channels below.</p>
+    </div>
+    <div class="contact-links-col fade-up">
+      <a href="mailto:rathishubham3410@gmail.com" class="contact-link contact-link-lg">
+        <div class="contact-link-icon cl-teal"><i class="fa-solid fa-envelope"></i></div>
+        <div class="contact-link-text">
+          <strong>Email</strong>
+          <span>rathishubham3410@gmail.com</span>
+        </div>
+        <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
+      </a>
+      <a href="https://linkedin.com/in/maheshwari-shubham" target="_blank" class="contact-link contact-link-lg">
+        <div class="contact-link-icon cl-blue"><i class="fa-brands fa-linkedin-in"></i></div>
+        <div class="contact-link-text">
+          <strong>LinkedIn</strong>
+          <span>linkedin.com/in/maheshwari-shubham</span>
+        </div>
+        <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
+      </a>
+      <a href="https://github.com/Shubham-102" target="_blank" class="contact-link contact-link-lg">
+        <div class="contact-link-icon cl-white"><i class="fa-brands fa-github"></i></div>
+        <div class="contact-link-text">
+          <strong>GitHub</strong>
+          <span>github.com/Shubham-102</span>
+        </div>
+        <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
+      </a>
+      <a href="Shubham_Resume.pdf" download class="contact-link contact-link-lg contact-link-resume">
+        <div class="contact-link-icon cl-yellow"><i class="fa-solid fa-file-arrow-down"></i></div>
+        <div class="contact-link-text">
+          <strong>Resume</strong>
+          <span>Download PDF</span>
+        </div>
+        <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- ── FOOTER ──────────────────────────────────────── -->
 <footer>
-  <div class="footer-copy">© 2025 <span>Shubham Maheshwari</span> — Built with HTML, CSS & JS</div>
+  <div class="footer-copy">© 2026 <span>Shubham Maheshwari</span> — Built with HTML, CSS & JS</div>
   <div class="footer-copy">Hartford, CT · Open to Relocation</div>
 </footer>
 
 <!-- ── JS ──────────────────────────────────────────── -->
-<script src="js/main.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>

@@ -39,19 +39,6 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Contact form
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('button');
-  btn.textContent = 'Message Sent ✓';
-  btn.style.background = '#0a8a6a';
-  setTimeout(() => {
-    btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane" style="margin-left:0.5rem;"></i>';
-    btn.style.background = '';
-    e.target.reset();
-  }, 3000);
-}
-
 // Stagger fade-up delays
 document.querySelectorAll('.fade-up').forEach((el, i) => {
   el.style.transitionDelay = (i % 4) * 0.08 + 's';
