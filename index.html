@@ -1,426 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Shubham Maheshwari — Data Analyst & ML Engineer. Portfolio showcasing AI projects, machine learning models, and data science work.">
-<meta name="keywords" content="Shubham Maheshwari, Data Analyst, Machine Learning Engineer, AI, Python, XGBoost, SHAP, Portfolio">
-<title>Shubham Maheshwari — Data Analyst & ML Engineer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shubham Maheshwari — Data Analyst & ML Engineer. Portfolio showcasing AI projects, machine learning models, and data science work." />
+  <meta name="keywords" content="Shubham Maheshwari, Data Analyst, Machine Learning Engineer, AI, Python, XGBoost, SHAP, Portfolio" />
+  <title>Shubham Maheshwari — Data Analyst & ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<!-- ── NAV ─────────────────────────────────────────── -->
-<nav>
-  <a href="#hero" class="nav-logo">SM<span>.</span></a>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
-  </ul>
-</nav>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__logo">S<span>.</span>M</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact" class="nav__cta">Hire Me</a></li>
+      </ul>
+      <div class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
 
-<!-- ── HERO ────────────────────────────────────────── -->
-<section id="hero">
-  <div class="hero-inner">
-    <div class="hero-top-row">
-      <div class="hero-text-col">
-        <div class="hero-badge">
-          <span class="hero-badge-dot"></span>
-          Available for full-time roles · Hartford, CT · Open to Relocation
-        </div>
-        <div class="hero-name-photo-row">
-          <h1 class="hero-name">
-            Shubham<br>Mahe<span class="accent">shwari</span>
-          </h1>
-          <div class="hero-photo-col">
-            <div class="hero-photo-frame">
-              <img src="profile.jpg" alt="Shubham Maheshwari">
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <div class="hero__availability">Available for full-time roles</div>
+          <h1 class="hero__name">Shubham Maheshwari</h1>
+          <p class="hero__title">Data Analyst &amp; ML Engineer</p>
+          <p class="hero__bio">
+            I build AI-powered data products — from feature engineering and predictive modeling to LLM integration and deployed web applications. Currently completing M.Eng at UConn, seeking full-time roles across the USA.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="Shubham_Resume.pdf" class="btn btn--outline" download>Download Resume</a>
+          </div>
+          <div class="hero__meta">
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Location</span>
+              <span class="hero__meta-value">Hartford, CT</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Status</span>
+              <span class="hero__meta-value">Open to Relocation</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Degree</span>
+              <span class="hero__meta-value">M.Eng CS — UConn</span>
             </div>
           </div>
         </div>
-        <div class="hero-typewriter">
-          <span id="typewriter-text"></span><span class="cursor"></span>
-        </div>
-        <p class="hero-desc">
-          I build AI-powered data products — from feature engineering and predictive modeling to LLM integration and deployed web applications. Currently completing M.Eng at UConn, seeking full-time Data Analyst and ML Engineer roles across the USA.
-        </p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn-primary">
-            <i class="fa-solid fa-rocket"></i> View Projects
-          </a>
-          <a href="Shubham_Resume.pdf" download class="btn-ghost">
-            <i class="fa-solid fa-download"></i> Download Resume
-          </a>
+        <div class="hero__photo-wrap">
+          <img src="profile.jpg" alt="Shubham Maheshwari" class="hero__photo" />
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<!-- ── ABOUT ───────────────────────────────────────── -->
-<section id="about">
-  <div class="section-label">01 — About Me</div>
-  <div class="about-grid">
-    <div class="about-text fade-up">
-      <p>I'm a data professional who loves the full stack of a data problem — from messy raw CSVs to a deployed AI product someone can actually use. My focus is on making machine learning <strong>explainable</strong> and <strong>useful</strong>, not just accurate.</p>
-      <p>Finishing my M.Eng in Computer Science at <strong>UConn</strong>, where I've worked on multi-modal deep learning, big data pipelines, and data visualization. Before that I spent a year building full-stack applications at <strong>Sourcved Technologies</strong> in India.</p>
-      <p>I'm particularly interested in how <strong>LLMs and traditional ML</strong> can work together — my RAG chatbot and insurance risk advisor projects are real examples of that combination in production. <strong>Databricks Generative AI certified.</strong></p>
-      <div class="about-chips">
-        <span class="chip">Python</span>
-        <span class="chip">XGBoost</span>
-        <span class="chip">SHAP</span>
-        <span class="chip">RAG / LangChain</span>
-        <span class="chip">SQL</span>
-        <span class="chip">Docker</span>
-        <span class="chip">Streamlit</span>
-        <span class="chip">PyTorch</span>
-        <span class="chip">Databricks</span>
-      </div>
-    </div>
-    <div class="about-card fade-up">
-      <div class="about-card-title">Education</div>
-      <div class="edu-item">
-        <div class="edu-degree">M.Eng. Computer Science & Engineering</div>
-        <div class="edu-school">University of Connecticut</div>
-        <div class="edu-date">Aug 2024 – May 2026 · Storrs, CT</div>
-      </div>
-      <div class="edu-divider"></div>
-      <div class="edu-item">
-        <div class="edu-degree">B.Eng. Computer Science & Engineering</div>
-        <div class="edu-school">Gujarat Technological University</div>
-        <div class="edu-date">July 2019 – June 2023 · India</div>
-      </div>
-      <div class="edu-divider"></div>
-      <div class="about-card-title" style="margin-top:0.5rem;">Coursework</div>
-      <div style="color:var(--muted); font-size:0.82rem; line-height:1.8;">
-        ML for Data Science · Deep Learning · Data Mining · Cloud Computing · Data Visualization · Advanced Programming
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── SKILLS ──────────────────────────────────────── -->
-<section id="skills" style="background:var(--bg2);">
-  <div class="inner">
-    <div class="section-label">02 — Skills</div>
-    <h2 class="section-title">What I Work With</h2>
-    <div class="skills-grid">
-      <div class="skill-card fade-up">
-        <div class="skill-card-icon icon-teal"><i class="fa-solid fa-brain"></i></div>
-        <div class="skill-card-title">Machine Learning & AI</div>
-        <div class="skill-tags">
-          <span class="skill-tag">XGBoost</span>
-          <span class="skill-tag">Scikit-learn</span>
-          <span class="skill-tag">PyTorch</span>
-          <span class="skill-tag">TensorFlow</span>
-          <span class="skill-tag">SHAP</span>
-          <span class="skill-tag">Grad-CAM</span>
-          <span class="skill-tag">LangChain</span>
-          <span class="skill-tag">RAG</span>
-          <span class="skill-tag">Prompt Engineering</span>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-label reveal">About Me</p>
+      <h2 class="section-heading reveal">Building ML that's <em>explainable</em> and useful</h2>
+      <div class="about__grid">
+        <div class="about__body reveal">
+          <p>I'm a data professional who loves the full stack of a data problem — from messy raw CSVs to a deployed AI product someone can actually use. My focus is on making machine learning <strong>explainable and useful</strong>, not just accurate.</p>
+          <p>Finishing my M.Eng in Computer Science at <strong>UConn</strong>, where I've worked on multi-modal deep learning, big data pipelines, and data visualization. Before that I spent a year building full-stack applications at <strong>Sourcved Technologies</strong> in India.</p>
+          <p>I'm particularly interested in how <strong>LLMs and traditional ML</strong> can work together — my RAG chatbot and insurance risk advisor projects are real examples of that combination in production. <strong>Databricks Generative AI certified.</strong></p>
+          <div class="skills-cloud" style="margin-top: 24px;">
+            <span class="tag">Python</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">SHAP</span>
+            <span class="tag">RAG / LangChain</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Databricks</span>
+          </div>
         </div>
-      </div>
-      <div class="skill-card fade-up">
-        <div class="skill-card-icon icon-blue"><i class="fa-solid fa-code"></i></div>
-        <div class="skill-card-title">Languages & Libraries</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">JavaScript</span>
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">NumPy</span>
-          <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">Seaborn</span>
-          <span class="skill-tag">Plotly</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up">
-        <div class="skill-card-icon icon-yellow"><i class="fa-solid fa-chart-bar"></i></div>
-        <div class="skill-card-title">Data & Analytics</div>
-        <div class="skill-tags">
-          <span class="skill-tag">EDA</span>
-          <span class="skill-tag">Feature Engineering</span>
-          <span class="skill-tag">Statistical Analysis</span>
-          <span class="skill-tag">A/B Testing</span>
-          <span class="skill-tag">ETL Pipelines</span>
-          <span class="skill-tag">Power BI</span>
-          <span class="skill-tag">Tableau</span>
-          <span class="skill-tag">Excel</span>
-        </div>
-      </div>
-      <div class="skill-card fade-up">
-        <div class="skill-card-icon icon-red"><i class="fa-solid fa-database"></i></div>
-        <div class="skill-card-title">Databases & Deployment</div>
-        <div class="skill-tags">
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">MySQL</span>
-          <span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">Streamlit</span>
-          <span class="skill-tag">FastAPI</span>
-          <span class="skill-tag">Git/GitHub</span>
-          <span class="skill-tag">Google Analytics</span>
-          <span class="skill-tag">Linux</span>
+        <div class="about__right reveal">
+          <div class="edu-card">
+            <div class="edu-card__school">University of Connecticut</div>
+            <div class="edu-card__degree">M.Eng. Computer Science &amp; Engineering</div>
+            <div class="edu-card__meta">Aug 2024 – May 2026 &middot; Storrs, CT</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card__school">Gujarat Technological University</div>
+            <div class="edu-card__degree">B.Eng. Computer Science &amp; Engineering</div>
+            <div class="edu-card__meta">July 2019 – June 2023 &middot; India</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-card__school">Coursework</div>
+            <div class="edu-card__degree" style="font-size:.9rem; font-weight:500; color:var(--muted); line-height:1.6;">ML for Data Science &middot; Deep Learning &middot; Data Mining &middot; Cloud Computing &middot; Data Visualization &middot; Advanced Programming</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── PROJECTS ────────────────────────────────────── -->
-<section id="projects">
-  <div class="section-label">03 — Projects</div>
-  <h2 class="section-title">Things I've Built</h2>
-  <div class="projects-grid">
-
-    <!-- Featured -->
-    <div class="project-card featured fade-up">
-      <div style="flex:1;">
-        <div class="project-card-badge">
-          <i class="fa-solid fa-star" style="font-size:0.65rem;"></i> Featured Project
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <p class="section-label reveal">Expertise</p>
+      <h2 class="section-heading reveal">What I work with</h2>
+      <div class="skills__grid">
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🤖</div>
+          <div class="skill-card__title">Machine Learning &amp; AI</div>
+          <div class="skill-card__tags">
+            <span>XGBoost</span><span>Scikit-learn</span><span>PyTorch</span>
+            <span>TensorFlow</span><span>SHAP</span><span>Grad-CAM</span>
+            <span>LangChain</span><span>RAG</span><span>Prompt Engineering</span>
+          </div>
         </div>
-        <div class="project-number">01</div>
-        <div class="project-title">AI-Powered Insurance Risk Advisor</div>
-        <p class="project-desc">
-          End-to-end ML system that predicts insurance risk, explains drivers using SHAP, and generates plain-English recommendations. Trained on 50K+ records, achieving 87% validation accuracy vs. a 72% logistic-regression baseline. Deployed live on Streamlit Cloud.
-        </p>
-        <div class="project-metrics">
-          <span class="metric">87% Accuracy</span>
-          <span class="metric">vs 72% baseline</span>
-          <span class="metric">50K+ records</span>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">💻</div>
+          <div class="skill-card__title">Languages &amp; Libraries</div>
+          <div class="skill-card__tags">
+            <span>Python</span><span>SQL</span><span>JavaScript</span>
+            <span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
+            <span>Seaborn</span><span>Plotly</span>
+          </div>
         </div>
-        <div class="project-tech">
-          <span class="tech-tag">Python</span>
-          <span class="tech-tag">XGBoost</span>
-          <span class="tech-tag">SHAP</span>
-          <span class="tech-tag">Llama 3.3-70b</span>
-          <span class="tech-tag">Groq API</span>
-          <span class="tech-tag">Streamlit</span>
-          <span class="tech-tag">Plotly</span>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">📊</div>
+          <div class="skill-card__title">Data &amp; Analytics</div>
+          <div class="skill-card__tags">
+            <span>EDA</span><span>Feature Engineering</span><span>A/B Testing</span>
+            <span>ETL Pipelines</span><span>Power BI</span><span>Tableau</span>
+            <span>Statistical Analysis</span><span>Excel</span>
+          </div>
         </div>
-        <div class="project-links">
-          <a href="https://insurance-risk-advisor-ecmby3rntyfatawmqd43mb.streamlit.app/" target="_blank" class="project-link primary">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-          </a>
-          <a href="https://github.com/Shubham-102/insurance-risk-advisor" target="_blank" class="project-link">
-            <i class="fa-brands fa-github"></i> GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="project-card fade-up">
-      <div class="project-number">02</div>
-      <div class="project-title">Explainable Multi-Modal Deep Learning</div>
-      <p class="project-desc">
-        UConn Capstone. Built single- and multi-modal deep learning architectures fusing sensor and image data. Multi-modal fusion beat single-modality by 14%. Stress-tested under 10–30% input noise, retaining 18% higher accuracy. SHAP + Grad-CAM heatmaps surfaced which sensor channels drove each prediction.
-      </p>
-      <div class="project-metrics">
-        <span class="metric">+14% over baseline</span>
-        <span class="metric">+18% noise resilience</span>
-        <span class="metric">SHAP + Grad-CAM</span>
-      </div>
-      <div class="project-tech">
-        <span class="tech-tag">PyTorch</span>
-        <span class="tech-tag">SHAP</span>
-        <span class="tech-tag">Grad-CAM</span>
-        <span class="tech-tag">NumPy</span>
-        <span class="tech-tag">Pandas</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/Shubham-102" target="_blank" class="project-link">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="project-card fade-up">
-      <div class="project-number">03</div>
-      <div class="project-title">RAG Chatbot — AI Document Q&amp;A</div>
-      <p class="project-desc">
-        End-to-end Retrieval-Augmented Generation chatbot that answers questions grounded in user-uploaded PDFs with source page citations. Chunked, embedded, and stored docs in ChromaDB. Integrated Groq (Llama 3.1 8B) with a custom prompt template preventing hallucination with multi-turn memory. Deployed on Hugging Face Spaces.
-      </p>
-      <div class="project-metrics">
-        <span class="metric">Source citations</span>
-        <span class="metric">Anti-hallucination</span>
-        <span class="metric">Live on HF Spaces</span>
-      </div>
-      <div class="project-tech">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">LangChain</span>
-        <span class="tech-tag">ChromaDB</span>
-        <span class="tech-tag">Groq / Llama 3.1</span>
-        <span class="tech-tag">HuggingFace</span>
-        <span class="tech-tag">Streamlit</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/Shubham-102" target="_blank" class="project-link">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-      </div>
-    </div>
-
-    <!-- Project 4 -->
-    <div class="project-card fade-up">
-      <div class="project-number">04</div>
-      <div class="project-title">Customer &amp; Service Analytics Platform</div>
-      <p class="project-desc">
-        Full-stack MERN marketplace connecting customers with service providers. Queried aggregated usage logs to surface top-3 demand categories, directly informing the next sprint's product roadmap. MongoDB schemas with embedded vs. referenced document strategies optimized query performance.
-      </p>
-      <div class="project-metrics">
-        <span class="metric">Top-3 demand insights</span>
-        <span class="metric">E2E test suite</span>
-      </div>
-      <div class="project-tech">
-        <span class="tech-tag">Python</span>
-        <span class="tech-tag">MongoDB</span>
-        <span class="tech-tag">React.js</span>
-        <span class="tech-tag">Node.js</span>
-        <span class="tech-tag">Cypress</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/Shubham-102" target="_blank" class="project-link">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ── EXPERIENCE ──────────────────────────────────── -->
-<section id="experience" style="background:var(--bg2);">
-  <div class="inner">
-    <div class="section-label">04 — Experience</div>
-    <h2 class="section-title">Where I've Worked</h2>
-    <div class="timeline">
-
-      <div class="timeline-item fade-up">
-        <div class="timeline-header">
-          <div class="timeline-role">Software Developer Intern — Front-End & Integration</div>
-          <span class="timeline-date">July 2023 – May 2024</span>
-        </div>
-        <div class="timeline-company">Sourcved Technologies <span>· Ahmedabad, India</span></div>
-        <ul class="timeline-bullets">
-          <li>Built REST API-integrated web applications; traced data flow from backend to UI state, catching <strong>3 classes of serialization bugs</strong> causing silent data loss.</li>
-          <li><strong>Reduced UI defect rate by 40%</strong> over two release cycles by introducing a pre-merge browser matrix checklist across Chrome, Firefox, and Edge.</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item fade-up">
-        <div class="timeline-header">
-          <div class="timeline-role">MERN Stack Developer Intern</div>
-          <span class="timeline-date">Jan 2023 – May 2023</span>
-        </div>
-        <div class="timeline-company">Arth Infosoft Pvt. Ltd. <span>· Ahmedabad, India</span></div>
-        <ul class="timeline-bullets">
-          <li>Designed MongoDB schemas with <strong>embedded vs. referenced document strategies</strong> to optimize query performance; implemented REST API endpoints consumed by the React front end.</li>
-          <li>Managed server-side data logic and REST API integrations; built foundational experience in backend data pipelines.</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item current fade-up">
-        <div class="timeline-header">
-          <div class="timeline-role">Student Manager — Operations & Data Tracking</div>
-          <span class="timeline-date">Aug 2024 – Present</span>
-        </div>
-        <div class="timeline-company">UConn Dining Services <span>· Storrs, CT</span></div>
-        <ul class="timeline-bullets">
-          <li>Managed scheduling, payroll, and shift assignments for <strong>40+ student employees</strong> using data tracking systems.</li>
-          <li>Oversaw hiring and onboarding workflows; tracked staff performance and training completion metrics across 3 locations.</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ── CERTIFICATIONS ───────────────────────────────── -->
-<section id="certifications">
-  <div class="inner">
-    <div class="section-label">05 — Certifications</div>
-    <h2 class="section-title">Credentials</h2>
-    <div class="certs-grid">
-      <div class="cert-card fade-up">
-        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
-        <div class="cert-body">
-          <div class="cert-name">Generative AI Fundamentals</div>
-          <div class="cert-issuer">Databricks · 2024</div>
-        </div>
-      </div>
-      <div class="cert-card fade-up">
-        <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
-        <div class="cert-body">
-          <div class="cert-name">Databricks Fundamentals Accreditation</div>
-          <div class="cert-issuer">Databricks · Feb 2026</div>
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">⚙️</div>
+          <div class="skill-card__title">Databases &amp; Deployment</div>
+          <div class="skill-card__tags">
+            <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span>
+            <span>Streamlit</span><span>FastAPI</span><span>Git/GitHub</span>
+            <span>Google Analytics</span><span>Linux</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── CONTACT ─────────────────────────────────────── -->
-<section id="contact">
-  <div class="contact-wrapper contact-wrapper-slim">
-    <div class="contact-left fade-up">
-      <div class="section-label">06 — Contact</div>
-      <h2>Let's<br><em>Work Together</em></h2>
-      <p>I'm actively looking for Data Analyst and ML Engineer roles across the US. If you have an opportunity, a project, or just want to talk data — reach out directly through any of the channels below.</p>
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-label reveal">Work</p>
+      <h2 class="section-heading reveal">Things I've <em>built</em></h2>
+      <div class="projects__grid">
+
+        <!-- Project 1 — Featured -->
+        <div class="proj-card proj-card--featured reveal">
+          <div class="proj-card__header">
+            <span class="proj-card__badge">⭐ Featured</span>
+            <div class="proj-card__links">
+              <a href="https://insurance-risk-advisor-ecmby3rntyfatawmqd43mb.streamlit.app/" target="_blank" class="proj-card__link proj-card__link--live">↗ Live Demo</a>
+              <a href="https://github.com/Shubham-102/insurance-risk-advisor" target="_blank" class="proj-card__link">GitHub</a>
+            </div>
+          </div>
+          <h3 class="proj-card__title">AI-Powered Insurance Risk Advisor</h3>
+          <p class="proj-card__body">End-to-end ML system that predicts insurance risk, explains drivers using SHAP, and generates plain-English recommendations. Trained on 50K+ records, achieving 87% validation accuracy vs. a 72% logistic-regression baseline. Deployed live on Streamlit Cloud.</p>
+          <div class="proj-card__stats">
+            <div class="proj-stat"><span class="proj-stat__value">87%</span><span class="proj-stat__label">Validation Accuracy</span></div>
+            <div class="proj-stat"><span class="proj-stat__value">+15pp</span><span class="proj-stat__label">vs Baseline</span></div>
+            <div class="proj-stat"><span class="proj-stat__value">50K+</span><span class="proj-stat__label">Training Records</span></div>
+          </div>
+          <div class="proj-card__tech">
+            <span>Python</span><span>XGBoost</span><span>SHAP</span><span>Llama 3.3-70b</span><span>Groq API</span><span>Streamlit</span><span>Plotly</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="proj-card reveal">
+          <div class="proj-card__header">
+            <span class="proj-card__badge">Capstone</span>
+            <div class="proj-card__links">
+              <a href="https://github.com/Shubham-102" target="_blank" class="proj-card__link">GitHub</a>
+            </div>
+          </div>
+          <h3 class="proj-card__title">Explainable Multi-Modal Deep Learning</h3>
+          <p class="proj-card__body">Built single- and multi-modal deep learning architectures fusing sensor and image data. Multi-modal fusion beat single-modality by 14%. Stress-tested under 10–30% input noise, retaining 18% higher accuracy. SHAP + Grad-CAM heatmaps surfaced which sensor channels drove each prediction.</p>
+          <div class="proj-card__stats">
+            <div class="proj-stat"><span class="proj-stat__value">+14%</span><span class="proj-stat__label">Over Baseline</span></div>
+            <div class="proj-stat"><span class="proj-stat__value">+18%</span><span class="proj-stat__label">Noise Resilience</span></div>
+          </div>
+          <div class="proj-card__tech">
+            <span>PyTorch</span><span>SHAP</span><span>Grad-CAM</span><span>NumPy</span><span>Pandas</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="proj-card reveal">
+          <div class="proj-card__header">
+            <span class="proj-card__badge">Live on HF Spaces</span>
+            <div class="proj-card__links">
+              <a href="https://github.com/Shubham-102" target="_blank" class="proj-card__link">GitHub</a>
+            </div>
+          </div>
+          <h3 class="proj-card__title">RAG Chatbot — AI Document Q&amp;A</h3>
+          <p class="proj-card__body">End-to-end Retrieval-Augmented Generation chatbot that answers questions grounded in user-uploaded PDFs with source page citations. Chunked, embedded, and stored docs in ChromaDB. Integrated Groq (Llama 3.1 8B) with a custom prompt template preventing hallucination with multi-turn memory.</p>
+          <div class="proj-card__stats">
+            <div class="proj-stat"><span class="proj-stat__value">✓</span><span class="proj-stat__label">Source Citations</span></div>
+            <div class="proj-stat"><span class="proj-stat__value">✓</span><span class="proj-stat__label">Anti-Hallucination</span></div>
+          </div>
+          <div class="proj-card__tech">
+            <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Groq / Llama 3.1</span><span>HuggingFace</span><span>Streamlit</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="proj-card reveal">
+          <div class="proj-card__header">
+            <span class="proj-card__badge">Full-Stack</span>
+            <div class="proj-card__links">
+              <a href="https://github.com/Shubham-102" target="_blank" class="proj-card__link">GitHub</a>
+            </div>
+          </div>
+          <h3 class="proj-card__title">Customer &amp; Service Analytics Platform</h3>
+          <p class="proj-card__body">Full-stack MERN marketplace connecting customers with service providers. Queried aggregated usage logs to surface top-3 demand categories, directly informing the next sprint's product roadmap. MongoDB schemas with embedded vs. referenced document strategies optimized query performance.</p>
+          <div class="proj-card__stats">
+            <div class="proj-stat"><span class="proj-stat__value">Top-3</span><span class="proj-stat__label">Demand Insights</span></div>
+            <div class="proj-stat"><span class="proj-stat__value">E2E</span><span class="proj-stat__label">Test Suite</span></div>
+          </div>
+          <div class="proj-card__tech">
+            <span>Python</span><span>MongoDB</span><span>React.js</span><span>Node.js</span><span>Cypress</span>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="contact-links-col fade-up">
-      <a href="mailto:rathishubham3410@gmail.com" class="contact-link contact-link-lg">
-        <div class="contact-link-icon cl-teal"><i class="fa-solid fa-envelope"></i></div>
-        <div class="contact-link-text">
-          <strong>Email</strong>
-          <span>rathishubham3410@gmail.com</span>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section--alt" id="experience">
+    <div class="container">
+      <p class="section-label reveal">Career</p>
+      <h2 class="section-heading reveal">Where I've <em>worked</em></h2>
+      <div class="exp__timeline">
+
+        <div class="exp-item reveal">
+          <div class="exp-item__left">
+            <div class="exp-item__period">July 2023 – May 2024</div>
+            <div class="exp-item__company">Sourcved Technologies</div>
+            <div class="exp-item__location">Ahmedabad, India</div>
+          </div>
+          <div class="exp-item__right">
+            <div class="exp-item__role">Software Developer Intern</div>
+            <div class="exp-item__type">Front-End &amp; Integration</div>
+            <ul class="exp-item__bullets">
+              <li>Built REST API-integrated web applications; traced data flow from backend to UI state, catching <strong>3 classes of serialization bugs</strong> causing silent data loss.</li>
+              <li><strong>Reduced UI defect rate by 40%</strong> over two release cycles by introducing a pre-merge browser matrix checklist across Chrome, Firefox, and Edge.</li>
+            </ul>
+          </div>
         </div>
-        <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
-      </a>
-      <a href="https://linkedin.com/in/maheshwari-shubham" target="_blank" class="contact-link contact-link-lg">
-        <div class="contact-link-icon cl-blue"><i class="fa-brands fa-linkedin-in"></i></div>
-        <div class="contact-link-text">
-          <strong>LinkedIn</strong>
-          <span>linkedin.com/in/maheshwari-shubham</span>
+
+        <div class="exp-item reveal">
+          <div class="exp-item__left">
+            <div class="exp-item__period">Jan 2023 – May 2023</div>
+            <div class="exp-item__company">Arth Infosoft Pvt. Ltd.</div>
+            <div class="exp-item__location">Ahmedabad, India</div>
+          </div>
+          <div class="exp-item__right">
+            <div class="exp-item__role">MERN Stack Developer Intern</div>
+            <div class="exp-item__type">Backend &amp; Data Pipelines</div>
+            <ul class="exp-item__bullets">
+              <li>Designed MongoDB schemas with <strong>embedded vs. referenced document strategies</strong> to optimize query performance; implemented REST API endpoints consumed by the React front end.</li>
+              <li>Managed server-side data logic and REST API integrations; built foundational experience in backend data pipelines.</li>
+            </ul>
+          </div>
         </div>
-        <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
-      </a>
-      <a href="https://github.com/Shubham-102" target="_blank" class="contact-link contact-link-lg">
-        <div class="contact-link-icon cl-white"><i class="fa-brands fa-github"></i></div>
-        <div class="contact-link-text">
-          <strong>GitHub</strong>
-          <span>github.com/Shubham-102</span>
+
+        <div class="exp-item reveal">
+          <div class="exp-item__left">
+            <div class="exp-item__period">Aug 2024 – Present</div>
+            <div class="exp-item__company">UConn Dining Services</div>
+            <div class="exp-item__location">Storrs, CT</div>
+          </div>
+          <div class="exp-item__right">
+            <div class="exp-item__role">Student Manager</div>
+            <div class="exp-item__type">Operations &amp; Data Tracking</div>
+            <ul class="exp-item__bullets">
+              <li>Managed scheduling, payroll, and shift assignments for <strong>40+ student employees</strong> using data tracking systems.</li>
+              <li>Oversaw hiring and onboarding workflows; tracked staff performance and training completion metrics across 3 locations.</li>
+            </ul>
+          </div>
         </div>
-        <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
-      </a>
-      <a href="Shubham_Resume.pdf" download class="contact-link contact-link-lg contact-link-resume">
-        <div class="contact-link-icon cl-yellow"><i class="fa-solid fa-file-arrow-down"></i></div>
-        <div class="contact-link-text">
-          <strong>Resume</strong>
-          <span>Download PDF</span>
-        </div>
-        <i class="fa-solid fa-arrow-right contact-link-arrow"></i>
-      </a>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ── FOOTER ──────────────────────────────────────── -->
-<footer>
-  <div class="footer-copy">© 2026 <span>Shubham Maheshwari</span> — Built with HTML, CSS & JS</div>
-  <div class="footer-copy">Hartford, CT · Open to Relocation</div>
-</footer>
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <p class="section-label reveal">Credentials</p>
+      <h2 class="section-heading reveal">Certifications</h2>
+      <div class="certs__grid">
+        <div class="cert-card reveal">
+          <div class="cert-card__icon">🎓</div>
+          <div>
+            <div class="cert-card__name">Generative AI Fundamentals</div>
+            <div class="cert-card__issuer">Databricks &middot; 2024</div>
+          </div>
+        </div>
+        <div class="cert-card reveal">
+          <div class="cert-card__icon">🏅</div>
+          <div>
+            <div class="cert-card__name">Databricks Fundamentals Accreditation</div>
+            <div class="cert-card__issuer">Databricks &middot; Feb 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- ── JS ──────────────────────────────────────────── -->
-<script src="js/main.js"></script>
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="container">
+      <p class="section-label reveal">Get In Touch</p>
+      <h2 class="section-heading reveal">Let's work <em>together</em></h2>
+      <div class="contact__inner">
+        <div class="reveal">
+          <p class="contact__intro">I'm actively looking for Data Analyst and ML Engineer roles across the US. If you have an opportunity, a project, or just want to talk data — reach out directly through any of the channels below.</p>
+          <div class="contact__links">
+            <a href="mailto:rathishubham3410@gmail.com" class="contact-link">
+              <div class="contact-link__icon">✉️</div>
+              <div>
+                <div class="contact-link__label">Email</div>
+                <div class="contact-link__value">rathishubham3410@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/maheshwari-shubham" target="_blank" class="contact-link">
+              <div class="contact-link__icon">💼</div>
+              <div>
+                <div class="contact-link__label">LinkedIn</div>
+                <div class="contact-link__value">linkedin.com/in/maheshwari-shubham</div>
+              </div>
+            </a>
+            <a href="https://github.com/Shubham-102" target="_blank" class="contact-link">
+              <div class="contact-link__icon">🐙</div>
+              <div>
+                <div class="contact-link__label">GitHub</div>
+                <div class="contact-link__value">github.com/Shubham-102</div>
+              </div>
+            </a>
+            <a href="Shubham_Resume.pdf" class="contact-link" download>
+              <div class="contact-link__icon">📄</div>
+              <div>
+                <div class="contact-link__label">Resume</div>
+                <div class="contact-link__value">Download PDF</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="open-to reveal">
+          <div class="open-to__heading">Currently open to</div>
+          <div class="open-to__list">
+            <div class="open-to__item">Full-time Data Analyst roles</div>
+            <div class="open-to__item">Full-time ML Engineer roles</div>
+            <div class="open-to__item">Positions across the USA</div>
+            <div class="open-to__item">Remote &amp; hybrid opportunities</div>
+            <div class="open-to__item">Relocation anywhere in the US</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Shubham Maheshwari — Built with HTML, CSS &amp; JS &nbsp;·&nbsp; Hartford, CT · Open to Relocation</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
